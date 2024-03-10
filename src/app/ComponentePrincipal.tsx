@@ -17,8 +17,10 @@ const ComponentePrincipal = () => {
         {sugestoes && <img className="z-50 absolute top-0" src="/sugestoes.png" alt="" width={480} height={672} />}
       </div>
       <div className="mt-2 flex justify-between h-40 gap-4">
+        {/* https://wa.me/15551234567?text=Tenho%20interesse%20em%20comprar%20seu%20carro */}
+
         <a
-          href="https://web.whatsapp.com/send?phone=5567992044898&text=Oiiii%2C%20passando%20para%20confirmar%20presen%C3%A7a%20na%20festa%20da%20Marcella%21"
+          href="https://wa.me/5567992044898?text=Oiiii%2C%20passando%20para%20confirmar%20presen%C3%A7a%20na%20festa%20da%20Marcella%21"
           className="flex-1 flex flex-col border justify-center items-center text-center"
         >
           <img src="/iconecoracao.svg" height={100} width={100} alt="" />
