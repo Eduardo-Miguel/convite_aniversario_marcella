@@ -4,7 +4,7 @@
 import { useState } from "react";
 
 const ComponentePrincipal = () => {
-  const [sugestoes, setSugestoes] = useState(true);
+  const [sugestoes, setSugestoes] = useState(false);
 
   const handleSugestoes = () => {
     setSugestoes(!sugestoes);
