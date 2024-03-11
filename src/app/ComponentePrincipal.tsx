@@ -4,7 +4,7 @@
 import { useState } from "react";
 
 const ComponentePrincipal = () => {
-  const [sugestoes, setSugestoes] = useState(false);
+  const [sugestoes, setSugestoes] = useState(true);
 
   const handleSugestoes = () => {
     setSugestoes(!sugestoes);
@@ -14,7 +14,15 @@ const ComponentePrincipal = () => {
     <div className="flex flex-col">
       <div className="relative">
         <video src="convite_marcella.mp4"></video>
-        {sugestoes && <img className="z-50 absolute top-0" src="/sugestoes.png" alt="" width={480} height={672} />}
+        {sugestoes && (
+          <div onClick={handleSugestoes}>
+            <img className="z-40 absolute top-0" src="/sugestoes.png" alt="" width={480} height={672} />
+            <div className="z-50 absolute bottom-14 w-full text-center font-black cursor-pointer">
+              <img className="m-auto" src="iconevoltar.svg" alt="" width={50} />
+              voltar
+            </div>
+          </div>
+        )}
       </div>
       <div className="mt-2 flex justify-between h-40 gap-4">
         {/* https://wa.me/15551234567?text=Tenho%20interesse%20em%20comprar%20seu%20carro */}
@@ -33,7 +41,10 @@ const ComponentePrincipal = () => {
           <img src="/iconelocal.svg" width={100} height={100} alt="" />
           Local
         </a>
-        <div onClick={handleSugestoes} className="flex-1 flex flex-col border justify-center items-center text-center">
+        <div
+          onClick={handleSugestoes}
+          className="flex-1 flex flex-col border justify-center items-center text-center cursor-pointer"
+        >
           <img src="/iconepresente.png" height={100} width={100} alt="" />
           Sugestão de Presentes
         </div>
