@@ -13,7 +13,9 @@ const ComponentePrincipal = () => {
   return (
     <div className="flex flex-col">
       <div className="relative">
-        <video src="convite_marcella.mp4"></video>
+        <video autoPlay loop>
+          <source src="convite_marcella_animado.mp4" type="video/mp4" />
+        </video>
         {sugestoes && (
           <div onClick={handleSugestoes}>
             <img className="z-40 absolute top-0" src="/sugestoes.png" alt="" width={480} height={672} />
