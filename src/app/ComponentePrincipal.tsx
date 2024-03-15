@@ -13,7 +13,7 @@ const ComponentePrincipal = () => {
   return (
     <div className="flex flex-col">
       <div className="relative">
-        <video autoPlay loop>
+        <video controls autoPlay loop>
           <source src="convite_marcella_animado.mp4" type="video/mp4" />
         </video>
         {sugestoes && (
