@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main
       style={{ backgroundColor: "#fff3f4", color: "#956361" }}
-      className="flex justify-center items-start h-dvh text-white"
+      className="flex justify-center items-center h-dvh text-white"
     >
       <ComponentePrincipal />
     </main>
