@@ -33,21 +33,21 @@ const ComponentePrincipal = () => {
           href="https://wa.me/5567992044898?text=Oiiii%2C%20passando%20para%20confirmar%20presen%C3%A7a%20na%20festa%20da%20Marcella%21"
           className="flex-1 flex flex-col border justify-center items-center text-center"
         >
-          <img src="/iconecoracao.svg" height={100} width={100} alt="" />
+          <img src="/iconecoracao.svg" height={50} width={50} alt="" />
           Confirmar presença!
         </a>
         <a
           href="https://maps.app.goo.gl/dxoi69qp5qvqP2ym6"
           className="flex-1 flex flex-col border justify-center items-center text-center"
         >
-          <img src="/iconelocal.svg" width={100} height={100} alt="" />
+          <img src="/iconelocal.svg" width={50} height={50} alt="" />
           Local
         </a>
         <div
           onClick={handleSugestoes}
           className="flex-1 flex flex-col border justify-center items-center text-center cursor-pointer"
         >
-          <img src="/iconepresente.png" height={100} width={100} alt="" />
+          <img src="/iconepresente.png" height={50} width={50} alt="" />
           Sugestão de Presentes
         </div>
       </div>
