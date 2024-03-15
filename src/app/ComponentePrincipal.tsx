@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 
 const ComponentePrincipal = () => {
   const [abriuSugestoes, setAbriuSugestoes] = useState(false);
@@ -45,7 +45,7 @@ const ComponentePrincipal = () => {
 
         <div
           onClick={handleAbrirConvite}
-          className={`z-50 absolute top-40 w-full text-center font-black cursor-pointer 
+          className={`z-50 absolute top-40 w-full text-center font-black cursor-pointer
               transition-opacity duration-1000 ${abrindoConvite || abriuConvite ? "opacity-0" : "opacity-100"}`}
         >
           <img onClick={handleAbrirConvite} className="m-auto" src="/icone_carta.svg" alt="" width={150} height={150} />
