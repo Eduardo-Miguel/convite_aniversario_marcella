@@ -13,7 +13,7 @@ const ComponentePrincipal = () => {
   return (
     <div className="flex flex-col">
       <div className="relative">
-        <video controls autoPlay loop>
+        <video autoPlay loop>
           <source src="convite_marcella_animado.mp4" type="video/mp4" />
         </video>
         {sugestoes && (
@@ -26,7 +26,7 @@ const ComponentePrincipal = () => {
           </div>
         )}
       </div>
-      <div className="mt-2 flex justify-between h-40 gap-4">
+      <div className="mt-2 flex justify-between h-28 gap-4">
         {/* https://wa.me/15551234567?text=Tenho%20interesse%20em%20comprar%20seu%20carro */}
 
         <a
