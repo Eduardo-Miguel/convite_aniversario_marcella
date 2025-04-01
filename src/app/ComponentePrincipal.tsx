@@ -34,14 +34,6 @@ const ComponentePrincipal = () => {
   return (
     <div className="flex flex-col">
       <div className="relative min-w-60">
-        {/* <video
-          ref={videoRef}
-          autoPlay
-          loop
-          className={`transition-opacity duration-1000 ${abriuConvite ? "opacity-100" : "opacity-0"}`}
-        >
-          <source src="/convite_marcella_animado.mp4" type="video/mp4" />
-        </video> */}
         <img 
           className={`transition-opacity duration-1000 ${abriuConvite ? "opacity-100" : "opacity-0"}`}
         
