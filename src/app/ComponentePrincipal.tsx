@@ -86,7 +86,7 @@ const ComponentePrincipal = () => {
           Confirmar presença!
         </a>
         <a
-          href="https://maps.app.goo.gl/dxoi69qp5qvqP2ym6"
+          href="https://maps.app.goo.gl/1Yy5S4HVakCzeD3s5"
           className="flex-1 flex flex-col border justify-center items-center text-center"
         >
           <img src="/iconelocal.svg" width={50} height={50} alt="" />
