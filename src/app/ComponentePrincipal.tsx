@@ -34,14 +34,18 @@ const ComponentePrincipal = () => {
   return (
     <div className="flex flex-col">
       <div className="relative min-w-60">
-        <video
+        {/* <video
           ref={videoRef}
           autoPlay
           loop
           className={`transition-opacity duration-1000 ${abriuConvite ? "opacity-100" : "opacity-0"}`}
         >
           <source src="/convite_marcella_animado.mp4" type="video/mp4" />
-        </video>
+        </video> */}
+        <img 
+          className={`transition-opacity duration-1000 ${abriuConvite ? "opacity-100" : "opacity-0"}`}
+        
+        src="/convite_marcella.png" alt="" width={480} height={672} />
 
         <div
           onClick={handleAbrirConvite}
@@ -62,7 +66,7 @@ const ComponentePrincipal = () => {
         {abriuSugestoes && (
           <div onClick={handleSugestoes}>
             <img className="z-40 absolute top-0" src="/sugestoes.png" alt="" width={480} height={672} />
-            <div className="z-50 absolute bottom-14 w-full text-center font-black cursor-pointer">
+            <div className="z-50 absolute top-14 left-6 text-center font-black cursor-pointer">
               <img className="m-auto" src="iconevoltar.svg" alt="" width={50} />
               voltar
             </div>
